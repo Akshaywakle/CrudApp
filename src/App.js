@@ -10,6 +10,7 @@ import { Switch, Route } from 'react-router-dom'
 import NotFound from './components/pages/NotFound';
 import AddUser from './components/user/AddUser';
 import EditUser from './components/user/EditUser';
+import User from './components/user/User';
 
 function App() {
   return (
@@ -21,7 +22,9 @@ function App() {
           <Route  path='/contact' component={Contact} />
           <Route path='/addUser' component={AddUser}/>
           <Route path='/editUser/:id' component={EditUser}/>
+         
 
+          <Route path='/users/:id' component={User} />
           <Route  component={NotFound}/>
 
         </Switch>
